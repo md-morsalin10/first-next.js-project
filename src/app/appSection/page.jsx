@@ -1,9 +1,10 @@
+import TrendingApps from '@/components/HomePage/TrendingApps/TrendingApps';
 import React from 'react';
 
 const AppsSection = () => {
     return (
         <div>
-            <h2>Apps section</h2>
+            <TrendingApps from="apps"/>
         </div>
     );
 };

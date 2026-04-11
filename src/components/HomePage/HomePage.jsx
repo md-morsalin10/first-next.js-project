@@ -9,7 +9,7 @@ const HomePage = () => {
         <div>
             <Banner/>
             <RatingSection/>
-            <TrendingApps/>
+            <TrendingApps from="home"/>
         </div>
     );
 };
