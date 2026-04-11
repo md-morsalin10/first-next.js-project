@@ -8,7 +8,7 @@ const TrendApp = ({ data }) => {
   
 
     return (
-        <Link href={"/appSection"}  className='group border border-gray-300 bg-base-200 p-2 rounded-3xl space-y-2  hover:-translate-y-2 hover:shadow-xl transition-all duration-300 ease-in-out hover:border-purple-600'>
+        <Link href={`/appSection/${data.id}`}  className='group border border-gray-300 bg-base-200 p-2 rounded-3xl space-y-2  hover:-translate-y-2 hover:shadow-xl transition-all duration-300 ease-in-out hover:border-purple-600'>
             <div className='bg-linear-to-r font-bold from-[#c927c9] rounded-3xl to-[#8B5CF6] p-6'>
                 <div className='flex justify-center items-center h-55  m-2 overflow-hidden'>
                     <Image
