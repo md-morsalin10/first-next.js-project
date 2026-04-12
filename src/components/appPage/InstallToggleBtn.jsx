@@ -7,6 +7,8 @@ const InstallToggleBtn = ({size, app}) => {
     const {installApps, setInstallApps} = useContext(InstallAppsContext);
 
      console.log("InstallApps", installApps);
+
+     const isInstalled = installApps.find((installApp)=> installApp.id === app.id)
     
       const handleInstallBtn =()=> {
            setInstallApps([...installApps, app])
@@ -16,7 +18,9 @@ const InstallToggleBtn = ({size, app}) => {
     return (
         <button
             onClick={handleInstallBtn}
-            className='btn bg-green-500 border-none text-white'>Install Now ({size}MB)
+            disabled={isInstalled ? true :false}
+            className={`btn border-none text-white ${isInstalled ? 'bg-gray-400 cursor-not-allowed' : 'bg-green-500'}`}
+            >{ isInstalled ? "Installed" : "Install Now"} ({size}MB)
         </button>
     );
 };

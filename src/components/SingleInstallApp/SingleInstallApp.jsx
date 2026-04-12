@@ -17,7 +17,7 @@ const SingleInstallApp = ({ iApp }) => {
     const { downloads, ratingAvg, size, title, image } = iApp
     
     return (
-        <div className='group flex justify-between items-center p-5 border my-4 border-gray-300 rounded-2xl bg-white m-3 hover:-translate-y-2 hover:shadow-xl transition-all duration-300 ease-in-out hover:border-purple-400 '>
+        <div className='group flex justify-between items-center p-6 border my-6 border-gray-300 rounded-2xl bg-white m-3 hover:-translate-y-2 hover:shadow-xl transition-all duration-300 ease-in-out hover:border-purple-400 '>
             <div className='flex justify-center items-center gap-3 overflow-hidden'>
                 <div>
                     <Image src={image} height={100} width={100} className='h-20 w-20 rounded-2xl object-contain transition-transform duration-500 ease-in-out group-hover:scale-110' alt="" />
