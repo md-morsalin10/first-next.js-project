@@ -1,3 +1,4 @@
+import InstallToggleBtn from "@/components/appPage/InstallToggleBtn";
 import RatingChart from "@/components/RatingChart/RatingChart";
 import Image from "next/image";
 import Link from "next/link";
@@ -14,6 +15,9 @@ const AppsDetails = async ({ params }) => {
     const app = allData.find((app) => app.id == appId);
     console.log(app);
     const rating = app.ratings
+    const size = app.size
+
+  
 
 
     return (
@@ -53,7 +57,7 @@ const AppsDetails = async ({ params }) => {
                         </div>
                     </div>
                     <div>
-                        <button className='btn bg-green-500 border-none text-white'>Install Now ({app.size}MB)</button>
+                        <InstallToggleBtn size={size}></InstallToggleBtn>
                         <Link href={"/appSection"}><button className="btn btn-info hover:btn-primary mx-8">Back to Apps</button></Link>
                     </div>
                 </div>
