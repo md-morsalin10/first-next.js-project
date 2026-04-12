@@ -57,7 +57,7 @@ const AppsDetails = async ({ params }) => {
                         </div>
                     </div>
                     <div>
-                        <InstallToggleBtn size={size}></InstallToggleBtn>
+                        <InstallToggleBtn app={app} size={size}></InstallToggleBtn>
                         <Link href={"/appSection"}><button className="btn btn-info hover:btn-primary mx-8">Back to Apps</button></Link>
                     </div>
                 </div>

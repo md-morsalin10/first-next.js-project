@@ -1,4 +1,4 @@
-import InstallAppsProvider from '@/app/install/InstallAppsProvider';
+import InstallAppsProvider from '@/components/context/InstallAppsProvider';
 import React from 'react';
 
 const Providers = ({children}) => {
