@@ -9,7 +9,7 @@ const InstallApps = () => {
 
 
     return (
-        <div className='bg-linear-to-r font-bold from-[#c927c9]  to-[#8B5CF6] w-6xl mx-auto  rounded-3xl py-9 '>
+        <div className='bg-linear-to-r font-bold from-[#c927c9]  to-[#8B5CF6] md:w-6xl mx-auto  rounded-3xl py-9 '>
             {
                 installApps.length > 0 &&
                 <div className='text-center p-5 py-8'>
