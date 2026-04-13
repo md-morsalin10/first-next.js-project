@@ -9,7 +9,7 @@ import { IoMdStar } from "react-icons/io";
 
 const AppsDetails = async ({ params }) => {
     const { appId } = await params;
-    const res = await fetch("http://localhost:3000/data.json");
+    const res = await fetch("https://apps-store-next-js.vercel.app/data.json");
     const allData = await res.json();
 
     const app = allData.find((app) => app.id == appId);
@@ -47,7 +47,7 @@ const AppsDetails = async ({ params }) => {
                         </div>
                         <div className='flex flex-col justify-center items-center'>
                             <IoMdStar className='text-[#FF8811] font-bold text-6xl' />
-                            <p className='text-slate-50'>Rating</p>
+                            <p className='text-slate-50'>Ratings</p>
                             <h2 className='text-4xl md:text-5xl font-bold text-slate-50'>{app.ratingAvg}</h2>
                         </div>
                         <div className='flex flex-col justify-center items-center'>

@@ -2,7 +2,9 @@ import React from 'react';
 import TrendApp from './TrendApp';
 
 const TrendingApps = async ({from}) => {
-    const res = await fetch("http://localhost:3000/data.json");
+    const res = await fetch("https://apps-store-next-js.vercel.app/data.json" , {
+        cache:"no-store"
+    }) ;
     const allData = await res.json();
 
     
